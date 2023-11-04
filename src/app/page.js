@@ -6,7 +6,7 @@ export default async function Home() {
   // console.log(data.data);
   return (
     <div>
-      <DaftarSurat api={data}/>
+      <DaftarSurat api={data} />
     </div>
   );
 }
