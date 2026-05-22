@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import SearchBar from "../SearchBar";
+import LanjutkanBaca from "../LanjutkanBaca";
 
 const DaftarSurat = ({ api }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -14,6 +15,7 @@ const DaftarSurat = ({ api }) => {
 
   return (
     <div>
+      <LanjutkanBaca />
       <SearchBar onSearch={setSearchQuery} />
       <div className="flex flex-col p-4 gap-5 md:grid md:grid-cols-2 lg:grid-cols-2 lg:px-[300px]">
         {filteredSurat.length > 0 ? (
